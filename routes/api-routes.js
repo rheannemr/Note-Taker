@@ -12,9 +12,15 @@ module.exports = app => {
         }); 
 
         app.post("/api/notes", function (req, res) {
-            const note = req.body;
+            const note = {
+                title: req.body.title,
+                text: req.body.text,
+                id: req.body.id
+            };
+            req.body.id = note.length;
             notes.push(note);
-            updateNote();
+            updateNote(notes);
+            res.json(notes);
         });
 
         app.get("/api/notes/:id", function(req,res) {
@@ -23,14 +29,15 @@ module.exports = app => {
 
         app.delete("/api/notes/:id", function(req,res) {
             notes.splice(req.params.id, 1);
-            updateNote();
+            updateNote(notes);
+            res.json(notes);
         });
 
-        function updateNote() {
-            fs.writeFileSync('./db/db.json', JSON.stringify(data), function(err) {
+        function updateNote(notes) {
+            fs.writeFile('./db/db.json', JSON.stringify(notes), function(err) {
                 if(err) throw(err);
+                return true;
             });
-            res.json(data);
         };
     });
 };
