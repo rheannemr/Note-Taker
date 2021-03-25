@@ -43,13 +43,16 @@ This project is created with:
 - [Node](https://www.nodesoftware.com/?gclid=Cj0KCQiA7NKBBhDBARIsAHbXCB6tjiRB0Swb6tW761XCKEBqzP7vkz6NTptfe23zj-wRIt9y4L5XD7IaAtdREALw_wcB)
 - [HTML](https://html.com/)
 - [CSS](https://www.w3.org/Style/CSS/Overview.en.html)
-- 
+
 ## Summary
 
 An app to help you with all your grocery shopping trips; You can add to your shopping list, keep track of what's in your fridge, and most importantly, whip up a delicious recipe with what you have!
 
 ## Images
 
+![images](newnote.png)
+![images](notesposted.png)
+![images](notetakerhome.png)
 
 ## Author
 
