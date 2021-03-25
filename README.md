@@ -50,9 +50,9 @@ An app to help you with all your grocery shopping trips; You can add to your sho
 
 ## Images
 
-![images](newnote.png)
-![images](notesposted.png)
-![images](notetakerhome.png)
+![images](/public/assets/images/notetakerhome.png)
+![images](/public/assets/images/newnote.png)
+![images](/public/assets/images/notesposted.png)
 
 ## Author
 
